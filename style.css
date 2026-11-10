@@ -1,0 +1,107 @@
+/* Palette Definitions */
+:root {
+    --oxford-blue: #03213D;
+    --fresh-lime: #D5E159;
+    --graphite-gray: #333333;
+    --pale-silver: #DAD9D9;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--graphite-gray);
+    overflow-x: hidden;
+}
+
+/* Custom Color Utilities */
+.bg-custom-dark {
+    background-color: var(--oxford-blue) !important;
+}
+
+.text-lime {
+    color: var(--fresh-lime) !important;
+}
+
+.text-primary-dark {
+    color: var(--oxford-blue) !important;
+}
+
+.text-silver {
+    color: var(--pale-silver) !important;
+}
+
+.bg-light-silver {
+    background-color: rgba(218, 217, 217, 0.25);
+}
+
+.btn-lime {
+    background-color: var(--fresh-lime);
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.btn-lime:hover {
+    background-color: #c4d047;
+    color: #000 !important;
+}
+
+/* Navbar Tuning */
+.navbar .nav-link {
+    color: #ffffff !important;
+    font-weight: 500;
+    margin: 0 5px;
+}
+
+.navbar .nav-link:hover, .navbar .nav-link.active {
+    color: var(--fresh-lime) !important;
+}
+
+/* Hero Section */
+.hero-section {
+    min-height: 85vh;
+    background: linear-gradient(135deg, rgba(3, 33, 61, 0.95), rgba(3, 33, 61, 0.8)), url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
+    padding-top: 100px;
+}
+
+/* Service Cards */
+.service-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+}
+
+.icon-wrapper {
+    width: 60px;
+    height: 60px;
+    background-color: var(--fresh-lime);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Section Title Indicator */
+.section-title {
+    color: var(--oxford-blue);
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 3px;
+    background-color: var(--fresh-lime);
+}
+
+.max-w-700 { max-width: 700px; }
+.max-w-800 { max-width: 800px; }
+.max-w-900 { max-width: 900px; }
+.w-fit { width: fit-content; }
